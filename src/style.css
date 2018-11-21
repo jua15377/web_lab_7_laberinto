@@ -1,0 +1,37 @@
+.Maze_4 {
+    display: grid;
+    background-color: white;
+    height: 130px;
+    width: 260px;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  }
+
+.intersection{
+    height: 20px;
+    width: 20px;
+    background: black;
+}
+
+.verticalWall{
+    height: 40px;
+    width: 20px;
+    background: blue;
+}
+
+.horizontalWall{
+    height: 20px;
+    width: 20px;
+    background: greenyellow;
+}
+.walk{
+    height: 20px;
+    width: 20px;
+    background: white;
+}
+.goal{
+
+}
+
+.Player{
+    
+}
