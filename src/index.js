@@ -57,6 +57,12 @@ class Maze extends React.Component{
 						else if(piece === "-"){
 							return <div className="horizontalWall"></div>
 						}
+						else if(piece === "p"){
+							return <div className="player_up"></div>
+						}
+						else if(piece === "g"){
+							return <div className="goal"></div>
+						}
 						else{
 							return <div className="walk"></div>
 						}
