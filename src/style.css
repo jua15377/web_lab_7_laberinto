@@ -1,36 +1,46 @@
+body {
+    background: rgb(255, 255, 255);
+    font-family: 'Arial', cursive;
+  }
+
+.index {
+    position: absolute;
+    margin: auto;
+  }
+
 .Maze_4 {
     display: grid;
     background-color: white;
-    height: 130px;
-    width: 260px;
+    height: 260px;
+    width: 520px;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto;
   }
 
 .intersection{
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
     background: black;
 }
 
 .verticalWall{
-    height: 40px;
-    width: 20px;
+    height: 80px;
+    width: 40px;
     background: black;
 }
 
 .horizontalWall{
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
     background: black;
 }
 .walk{
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
     background: white;
 }
 .goal{
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
     background: greenyellow;
 }
 
@@ -38,8 +48,76 @@
     
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 20px solid red;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid red;
     
 }
+
+.player_down{
+    
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid red;
+    
+}
+
+.player_left{
+    
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 40px solid red;
+    border-bottom: 20px solid transparent;
+    
+}
+
+.player_rigth{
+    
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 40px solid red;
+    border-bottom: 20px solid transparent;
+    
+}
+
+.completed{
+    font-size: 60px;
+    color: rgb(2, 236, 2);
+    position: fixed; 
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 2; 
+    text-align: center;
+    cursor: pointer;
+  }
+
+
+.player_won {
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: red;
+    position: relative;
+    top: -20px;
+  }
+.player_won:after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: red;
+  }
+  
